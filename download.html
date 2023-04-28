@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <style >
+    #app-download {
+  width: 80%;
+  margin:30px auto;
+  
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+label {
+  margin-top: 1rem;
+}
+
+input {
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 80%;
+}
+
+select {
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 80%;
+}
+
+button {
+  margin-top: 1rem;
+  padding: 0.5rem;
+  border-radius: 4px;
+  background-color: #2196f3;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0c7cd5;
+}
+.cover{
+  justify-content:center;
+  display:flex;
+  flex-direction: column;
+  height:90vh;
+  
+ 
+  border:2px solid black;
+  
+}
+.img_dw{
+  
+  height:50px;
+  width: 70px;
+  border:2px solid black;
+  border-radius:10px;
+  margin-right: 15px;
+  
+}
+.divgta{
+  margin-left:10px;
+  display:flex;
+  justify-content: center;
+  align-content: center;
+  
+}
+.parentdiv{
+  margin-top:80px;
+}
+ 
+ 
+
+  </style>
+    
+  </style>
+
+   <link rel="stylesheet" href="style.css">
+ <script src="javascript.js">javascript.js</script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<!-- Top Navigation Menu -->
+<div class="topnav">
+  <a href="#home" class="active"><span class="logo"><img class="img" src="gta-v-bigjpg-e94b8d1280wjpg-e14d62_160w.jpg"><b align="center">   GTA 5 Free Stream Id & Password</b></span></a>
+  <!-- Navigation links (hidden by default) -->
+  <div id="myLinks">
+    <a href="index.html">Home</a>
+    <a href="mailto:singhsumit61220@gmail.com">Contact</a>
+    <a href="#about">About</a>
+  </div>
+  <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a></div>
+  <div id="app-download" class="cover"><div>
+  <h2>Download our app</h2>
+  <form>
+    <label for="app-store" >App Store:</label>
+     <select id="app-store">
+    <option value="google">Google Play Store</option>
+      <option value="apple">Apple App Store</option>
+      
+    </select>
+    <label for="app-name">App Name:</label>
+    <input type="text" id="app-name">
+    <button id="download-button">Download</button>
+  </form></div><div class="parentdiv">
+  <div class="divgta">
+    <img class="img_dw" src="gta-v-bigjpg-e94b8d1280wjpg-e14d62_160w.jpg" alt="GTA 5">
+    <strong>
+      Grand Theft Auto V :
+      The manual 
+    </strong>
+  </div>
+  <img src="Download-Now-Button-PNG-Free-Download.png" height="200px" alt="Download">
+  </div>
+</div>
+<script>
+  const downloadButton = document.querySelector('#download-button');
+
+downloadButton.addEventListener('click', (event) => {
+  event.preventDefault();
+  
+  const appStore = document.querySelector('#app-store').value;
+  const appName = document.querySelector('#app-name').value;
+  
+  if (appName.trim() === '') {
+    alert('Please enter an app name.');
+  } else {
+    switch (appStore) {
+      case 'apple':
+        window.location.href = `https://apps.apple.com/us/app/${appName}/id1234567890`;
+        break;
+      case 'google':
+        window.location.href = `https://play.google.com/store/apps/details?id=com.${appName}.android&hl=en_US&gl=US`;
+        
+        break;
+      default:
+        alert('Invalid app store selected.');
+    }
+  }
+});
+
+</script>
+
+</body>
+
+</html>
