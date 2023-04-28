@@ -176,7 +176,10 @@ di{
 a{
   text-decoration:none;
 }
-
+.ad{
+Display:none;
+Opacity:0;
+}
 @media  screen
 and (min-width: 700px) {
 .glow-on-hover{
@@ -200,5 +203,9 @@ and (min-width: 700px) {
 }
 a button span #ico{
   font-size:100px;
+}
+.ad{
+display:flex;
+Opacity:1;
 }
 }
