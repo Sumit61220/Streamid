@@ -208,4 +208,6 @@ a button span #ico{
 display:flex;
 Opacity:1;
 }
+.add{
+display:none;
 }
