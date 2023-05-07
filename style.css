@@ -204,10 +204,4 @@ and (min-width: 700px) {
 a button span #ico{
   font-size:100px;
 }
-.ad{
-display:flex;
-Opacity:1;
-}
-.add{
-display:none;
 }
