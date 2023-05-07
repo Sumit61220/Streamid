@@ -181,7 +181,7 @@ Display:none;
 Opacity:0;
 }
 @media  screen
-and (min-width: 1025px) {
+and (min-width: 700px) {
 .glow-on-hover{
   display: flex;
   align-items: center;
